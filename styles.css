@@ -92,6 +92,8 @@ FAQs CONTAINER
 
 .question:hover {
   cursor: pointer;
+  color: var(--dark-purple-color);
+  font-weight: 700;
 }
 
 .faq-content-answer {
