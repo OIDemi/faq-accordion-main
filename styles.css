@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --pink-color: #f9f0ff;
+  --grayish-purple-color: #8c6991;
+  --dark-purple-color: #2f1533;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--pink-color);
+}
+
+header {
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  height: 35vh;
+}
+
+.faq-section {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/********
+FAQs CONTAINER
+
+********/
+.faq-container {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  background-color: var(--white-color);
+  bottom: 20vh;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-body {
+  width: 90%;
+  margin: auto;
+}
+
+.faq-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--dark-purple-color);
+}
+
+.faq-content {
+  margin-top: 1rem;
+}
+.faq-content-container {
+  border-bottom: 2px solid var(--pink-color);
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+}
+
+.faq-content-container-last {
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+}
+.faq-content-container-last img {
+  cursor: pointer;
+}
+.faq-content-container img {
+  cursor: pointer;
+}
+.faq-content-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  font-weight: 600;
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.faq-content-answer {
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+.answer {
+  color: var(--grayish-purple-color);
+}
+/******
+
+END CREDITS
+******/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  header {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+}
