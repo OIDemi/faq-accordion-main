@@ -23,7 +23,6 @@ header {
 }
 
 .faq-section {
-  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,11 +33,10 @@ FAQs CONTAINER
 
 ********/
 .faq-container {
-  position: relative;
   width: 90%;
   max-width: 700px;
   background-color: var(--white-color);
-  bottom: 20vh;
+  margin-top: -15vh;
   border-radius: 1rem;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
@@ -106,6 +104,7 @@ FAQs CONTAINER
 .answer {
   color: var(--grayish-purple-color);
 }
+
 /******
 
 END CREDITS
@@ -114,6 +113,7 @@ END CREDITS
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 50px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
